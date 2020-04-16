@@ -1,0 +1,23 @@
+.customers {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 15em;
+  }
+  .customers li {
+    background-color: steelblue;
+    color: white;
+    border-radius: 4px;
+    padding: 4px;
+    margin: 2px;
+  }
+  .content{
+    width: 1245px;
+    height: 200px;
+    padding-left: 150px;
+    padding-top: 10px;
+
+  }
+  .CustomerData{
+    width: 300px;
+  }

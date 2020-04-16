@@ -1,0 +1,21 @@
+<div class = "content">
+<h3 class= "header">List of Customers</h3>
+<ul class="customers">
+  <li class= "CustomerData" *ngFor="let customer of customers | async; let i=index">
+    <span >{{i+1}}.</span> {{customer.name}}
+    <span class="removeButton">
+    <button style="float: right" (click)="removeCustomer(i)">Remove</button>
+    </span>
+    
+    <span class="updateButton">
+    <button style="float: right" (click)="updateCustomer(customer,i)">Update
+    </button>
+  </span>
+  </li>
+</ul>
+<div *ngIf="isPresent">
+<h4>update Customer</h4>
+<input #box [(ngModel)]="customerName" ><button (click)="saveChanges(customerName)">save</button>
+</div>
+<app-customer-add></app-customer-add>
+</div>
